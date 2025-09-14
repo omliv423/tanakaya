@@ -27,3 +27,12 @@
 - 価格表・商品規格PDFのダウンロード
 - 競合調査を踏まえたテキスト強化（ネット参照許可があれば対応）
 
+## 画像の配置（現状の参照ファイル名）
+
+- 特長1 仕込み: `assets/img/feature-prep-1920x1440.jpg`
+- 特長2 衛生: `assets/img/feature-hygiene-640x427.jpg`
+- 特長3 供給: `assets/img/feature-supply-1920x1280.jpg`
+- 商品（仮・共通）: `assets/img/product-placeholder-640x431.jpg`
+- 会社外観: `assets/img/exterior-700x386.jpg`
+
+これらが未配置でも、`onerror`で`placeholder.svg`にフォールバックするため表示は保たれます。
