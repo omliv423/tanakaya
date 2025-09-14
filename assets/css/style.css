@@ -89,6 +89,8 @@ h1, h2, h3 { margin: 0; line-height: 1.3; }
 .btn--primary:hover { background: #216a79; }
 .btn--ghost { background: #fff; border-color: var(--border); color: var(--text); }
 .btn--ghost:hover { background: var(--alt); }
+.btn--call { background: var(--brand-2); color: #1f2937; }
+.btn--call:hover { filter: brightness(0.95); }
 .btn--sm { padding: 8px 12px; font-size: 0.95rem; }
 
 /* Features */
