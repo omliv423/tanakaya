@@ -34,5 +34,8 @@
 - 特長3 供給: `assets/img/feature-supply-1920x1280.jpg`
 - 商品（仮・共通）: `assets/img/product-placeholder-640x431.jpg`
 - 会社外観: `assets/img/exterior-700x386.jpg`
+- 卸（梱包・納品）: `assets/img/wholesale-packaging-1920x1440.jpg`
+- 小売（受け取り）: `assets/img/pickup-counter-640x427.jpg`
+- ヒーロー背景: `assets/img/hero-640x427.jpg`
 
 これらが未配置でも、`onerror`で`placeholder.svg`にフォールバックするため表示は保たれます。
