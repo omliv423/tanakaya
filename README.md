@@ -29,13 +29,13 @@
 
 ## 画像の配置（現状の参照ファイル名）
 
-- 特長1 仕込み: `assets/img/feature-prep-1920x1440.jpg`
-- 特長2 衛生: `assets/img/feature-hygiene-640x427.jpg`
-- 特長3 供給: `assets/img/feature-supply-1920x1280.jpg`
-- 商品（仮・共通）: `assets/img/product-placeholder-640x431.jpg`
+- 特長1 仕込み: `assets/img/feature-prep-960.jpg`（WebP: `feature-prep-960.webp`）
+- 特長2 衛生: `assets/img/feature-hygiene-960.jpg`（WebP: `feature-hygiene-960.webp`）
+- 特長3 供給: `assets/img/feature-supply-960.jpg`（WebP: `feature-supply-960.webp`）
+- 商品（柚子・茶巾・ボウゼ）: `assets/img/product-yuzu-960.jpg` など（WebPあり）
 - 会社外観: `assets/img/exterior-700x386.jpg`
-- 卸（梱包・納品）: `assets/img/wholesale-packaging-1920x1440.jpg`
-- 小売（受け取り）: `assets/img/pickup-counter-640x427.jpg`
-- ヒーロー背景: `assets/img/hero-640x427.jpg`
+- 卸（梱包・納品）: `assets/img/wholesale-pack-1280.jpg`（WebP: `wholesale-pack-1280.webp`）
+- 小売（受け取り）: `assets/img/retail-counter-960.jpg`（WebP: `retail-counter-960.webp`）
+- ヒーロー背景: `assets/img/hero-main-1184.jpg`（`image-set`でWebP対応）
 
 これらが未配置でも、`onerror`で`placeholder.svg`にフォールバックするため表示は保たれます。
