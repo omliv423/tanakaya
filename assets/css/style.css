@@ -110,13 +110,29 @@ h1, h2, h3 { margin: 0; line-height: 1.3; }
 /* Features */
 .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .feature { display: grid; grid-template-columns: 1fr; gap: 10px; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); overflow: clip; }
-.feature img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.feature picture { display: block; aspect-ratio: 1 / 1; overflow: hidden; }
+.feature img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .feature__body { padding: 14px; }
 
 /* Cards */
-.cards { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.card { border: 1px solid var(--border); border-radius: var(--radius); overflow: clip; background: #fff; box-shadow: var(--shadow); }
-.card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.cards { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.card { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: #fff; box-shadow: var(--shadow); }
+.card picture { display: block; aspect-ratio: 1 / 1; overflow: hidden; position: relative; }
+.card picture::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--alt);
+}
+.card__img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card__img--shift-right { object-position: 60% center; }
 .card__body { padding: 14px; }
 
 /* Grid 2 */
@@ -127,6 +143,17 @@ h1, h2, h3 { margin: 0; line-height: 1.3; }
 .callout__title { margin: 0 0 2px; font-weight: 700; }
 .callout__tel a { font-size: 1.6rem; color: var(--brand); font-weight: 700; }
 .callout__note { color: var(--muted); }
+
+/* Media frame */
+.media-frame { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.media-frame picture { display: block; aspect-ratio: 4 / 3; }
+.media-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Contact */
+.contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.contact__item { border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; background: #fff; box-shadow: var(--shadow); }
+.contact__item h3 { margin-bottom: 6px; font-size: 1.1rem; }
+.contact__tel a { font-size: 1.6rem; font-weight: 700; color: var(--brand); letter-spacing: 0.02em; }
 
 /* Lists & text */
 .list { margin: 12px 0 16px; padding-left: 1.1rem; }
